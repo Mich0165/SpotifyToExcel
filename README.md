@@ -47,19 +47,19 @@ pip install -r requirements.txt
 ## Step 4: Register your Spotify Developer App
 Spotify requires each user to have their own Spotify App credentials for authentication.
 
-Visit the Spotify Developer Dashboard
+-Visit the Spotify Developer Dashboard
 
-Log in with your Spotify account
+-Log in with your Spotify account
 
-Click Create an App
+-Click Create an App
 
-Enter any App name and App description (examples below)
+-Enter any App name and App description (examples below)
 
-For Redirect URI, add exactly:
+-For Redirect URI, add exactly:
 
 http://127.0.0.1:8888/callback/
 
-Click Save
+-Click Save
 
 After creation, you'll see your Client ID and Client Secret on the app page
 
@@ -68,7 +68,7 @@ App Name: Spotify Playlist Exporter
 Description: A simple app to export Spotify playlist data to Excel
 
 ## Step 5: Configure your environment variables
-Create a .env file in the project root with the following content:
+-Create a .env file in the project root with the following content:
 
 SPOTIPY_CLIENT_ID=your_client_id_here
 
@@ -78,25 +78,26 @@ SPOTIPY_REDIRECT_URI=http://127.0.0.1:8888/callback/
 
 SPOTIPY_PLAYLIST_ID=your_playlist_id_here
 
-Replace the placeholders with your actual Spotify app credentials.
+-Replace the placeholders with your actual Spotify app credentials.
 
-Set SPOTIPY_PLAYLIST_ID to the playlist you want to export (playlist ID can be found in the Spotify app/share link).
+-Set SPOTIPY_PLAYLIST_ID to the playlist you want to export (playlist ID can be found in the Spotify app/share link).
 
 ## Step 6: Run the script
-Run without arguments (it will use the playlist ID from .env):
+-Run without arguments (it will use the playlist ID from .env):
 
 python export_playlist.py
-Or specify a playlist ID directly:
+
+-Or specify a playlist ID directly:
 
 python export_playlist.py <playlist_id>
 
 How to find a Playlist ID
 
-Open Spotify desktop/web app
+-Open Spotify desktop/web app
 
-Navigate to the playlist you want to export
+-Navigate to the playlist you want to export
 
-Click Share → Copy Spotify URI or Copy link
+-Click Share → Copy Spotify URI or Copy link
 
 The URI looks like:
 
