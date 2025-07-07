@@ -71,9 +71,13 @@ Create a .env file in the project root:
 
 
 SPOTIPY_CLIENT_ID=your_client_id_here
+
 SPOTIPY_CLIENT_SECRET=your_client_secret_here
+
 SPOTIPY_REDIRECT_URI=http://127.0.0.1:8888/callback/
+
 SPOTIPY_PLAYLIST_ID=your_playlist_id_here
+
 Replace the placeholders with your actual Spotify app credentials.
 
 Set SPOTIPY_PLAYLIST_ID to the playlist you want to export (playlist ID can be found in the Spotify app/share link).
