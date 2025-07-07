@@ -120,10 +120,11 @@ The redirect URI must match exactly what you entered in your Spotify developer a
 
 ---
 
-📜 License
+## 📜 License
+
 This project is provided under the MIT License. Feel free to use, modify, and share it!
 
-##
 
-🙏 Credits
+## 🙏 Credits
+
 Built using Spotipy (Spotify Web API wrapper)
