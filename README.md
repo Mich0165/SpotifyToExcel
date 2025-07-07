@@ -24,12 +24,12 @@ Export your Spotify playlists into an Excel file with track details like Name, A
 - Spotify account  
 - Spotify Developer account to create your own Spotify App (free)  
 
-Step 1: Clone the repository
+## Step 1: Clone the repository
 
 git clone https://github.com/yourusername/spotify-playlist-exporter.git
 cd spotify-playlist-exporter
 
-Step 2: Create and activate a virtual environment (recommended)
+## Step 2: Create and activate a virtual environment (recommended)
 
 python -m venv venv
 # Windows
@@ -37,11 +37,11 @@ venv\Scripts\activate
 # macOS/Linux
 source venv/bin/activate
 
-Step 3: Install dependencies
+## Step 3: Install dependencies
 
 pip install -r requirements.txt
 
-Step 4: Register your Spotify Developer App
+## Step 4: Register your Spotify Developer App
 Spotify requires each user to have their own Spotify App credentials for authentication.
 
 Visit the Spotify Developer Dashboard
@@ -66,7 +66,7 @@ App Name: Spotify Playlist Exporter
 
 Description: A simple app to export Spotify playlist data to Excel
 
-Step 5: Configure your environment variables
+## Step 5: Configure your environment variables
 Create a .env file in the project root:
 
 
@@ -78,7 +78,7 @@ Replace the placeholders with your actual Spotify app credentials.
 
 Set SPOTIPY_PLAYLIST_ID to the playlist you want to export (playlist ID can be found in the Spotify app/share link).
 
-Step 6: Run the script
+## Step 6: Run the script
 Run without arguments (it will use playlist ID from .env):
 
 
@@ -101,7 +101,10 @@ The part after the last colon is the playlist ID
 The link looks like: https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=...
 The part after /playlist/ before the ? is the playlist ID
 
+---
+
 Notes
+
 Only public playlists and playlists you have access to can be exported.
 
 If you encounter 403 Forbidden errors on audio features, the playlist or tracks might have access restrictions.
