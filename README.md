@@ -89,7 +89,9 @@ python export_playlist.py
 Or specify a playlist ID directly:
 
 python export_playlist.py <playlist_id>
+
 How to find a Playlist ID
+
 Open Spotify desktop/web app
 
 Navigate to the playlist you want to export
