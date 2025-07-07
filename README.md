@@ -107,6 +107,7 @@ https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=...
 The part after /playlist/ before the ? is the playlist ID.
 
 ---
+
 Notes
 
 Only public playlists and playlists you have access to can be exported.
@@ -117,8 +118,12 @@ This script uses OAuth and the Spotify Web API, so you must have valid app crede
 
 The redirect URI must match exactly what you entered in your Spotify developer app settings.
 
+---
+
 📜 License
 This project is provided under the MIT License. Feel free to use, modify, and share it!
+
+##
 
 🙏 Credits
 Built using Spotipy (Spotify Web API wrapper)
