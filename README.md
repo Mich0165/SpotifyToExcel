@@ -1,18 +1,18 @@
-# Spotify Playlist Exporter to Excel
+# Spotify Playlist Exporter to Excel 🎵➡️📊
 
-Export your Spotify playlists into an Excel file with track details like Name, Artist, Album, Duration, Playlist info, and more!
+Easily export your Spotify playlists to an Excel (.xlsx) file with track details like name, artist, album, duration, and more!
 
 ---
 
-## Features
+## ✨ Features
 
 - Export any public Spotify playlist to Excel (.xlsx)  
-- Includes track info: Name, Artist(s), Album, Duration, Track URL  
-- Includes playlist metadata: Playlist name, author, playlist URL  
-- Automatically formats Excel for readability  
+- Track info: Name, Artist(s), Album, Duration, Track URL  
+- Playlist metadata: Playlist name, author, playlist URL  
+- Auto-formats Excel for readability  
 - Sums total playlist duration (hours:minutes)  
-- Easy to use CLI with environment variable support  
-- Pagination handled for large playlists  
+- CLI-friendly (uses environment variables or arguments)  
+- Handles large playlists with pagination  
 
 ---
 
@@ -26,14 +26,17 @@ Export your Spotify playlists into an Excel file with track details like Name, A
 
 ## Step 1: Clone the repository
 
-git clone https://github.com/yourusername/spotify-playlist-exporter.git
-cd spotify-playlist-exporter
+
+git clone https://github.com/Mich0165/SpotifyToExcel.git
+cd SpotifyToExcel
 
 ## Step 2: Create and activate a virtual environment (recommended)
 
 python -m venv venv
+
 # Windows
 venv\Scripts\activate
+
 # macOS/Linux
 source venv/bin/activate
 
@@ -46,29 +49,26 @@ Spotify requires each user to have their own Spotify App credentials for authent
 
 Visit the Spotify Developer Dashboard
 
-Log in with your Spotify account.
+Log in with your Spotify account
 
-Click "Create an App"
+Click Create an App
 
-Enter any App name and App description (examples below).
+Enter any App name and App description (examples below)
 
 For Redirect URI, add exactly:
 
-
 http://127.0.0.1:8888/callback/
-Then click Save
 
-After creation, you'll see your Client ID and Client Secret on the app page.
+Click Save
+
+After creation, you'll see your Client ID and Client Secret on the app page
 
 Example App Name and Description:
-
 App Name: Spotify Playlist Exporter
-
 Description: A simple app to export Spotify playlist data to Excel
 
 ## Step 5: Configure your environment variables
-Create a .env file in the project root:
-
+Create a .env file in the project root with the following content:
 
 SPOTIPY_CLIENT_ID=your_client_id_here
 
@@ -83,15 +83,12 @@ Replace the placeholders with your actual Spotify app credentials.
 Set SPOTIPY_PLAYLIST_ID to the playlist you want to export (playlist ID can be found in the Spotify app/share link).
 
 ## Step 6: Run the script
-Run without arguments (it will use playlist ID from .env):
-
+Run without arguments (it will use the playlist ID from .env):
 
 python export_playlist.py
 Or specify a playlist ID directly:
 
-
 python export_playlist.py <playlist_id>
-
 How to find a Playlist ID
 Open Spotify desktop/web app
 
@@ -99,14 +96,17 @@ Navigate to the playlist you want to export
 
 Click Share → Copy Spotify URI or Copy link
 
-The URI looks like: spotify:playlist:37i9dQZF1DXcBWIGoYBM5M
-The part after the last colon is the playlist ID
+The URI looks like:
 
-The link looks like: https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=...
-The part after /playlist/ before the ? is the playlist ID
+spotify:playlist:37i9dQZF1DXcBWIGoYBM5M
+The part after the last colon is the playlist ID.
+
+The link looks like:
+
+https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=...
+The part after /playlist/ before the ? is the playlist ID.
 
 ---
-
 Notes
 
 Only public playlists and playlists you have access to can be exported.
@@ -116,3 +116,9 @@ If you encounter 403 Forbidden errors on audio features, the playlist or tracks 
 This script uses OAuth and the Spotify Web API, so you must have valid app credentials.
 
 The redirect URI must match exactly what you entered in your Spotify developer app settings.
+
+📜 License
+This project is provided under the MIT License. Feel free to use, modify, and share it!
+
+🙏 Credits
+Built using Spotipy (Spotify Web API wrapper)
